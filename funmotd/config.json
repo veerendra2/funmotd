@@ -1,0 +1,10 @@
+{
+    "nsfw": false,
+    "quotes": {
+        "breaking_bad": 60,
+        "friends": 10,
+        "game_of_thrones": 0,
+        "jokes": 0,
+        "movies": 10
+    }
+}
