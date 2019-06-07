@@ -12,7 +12,12 @@ if (3, 0) < version < (3, 4):
 
 class PostInstall(install):
     def run(self):
+        install.run(self)
+        mode = 0o666
         bashrc_file = os.path.join(os.path.expanduser('~'), ".bashrc")
+        for filepath in self.get_outputs():
+            if os.path.split(filepath)[1] == "config.json":
+                os.chmod(filepath, mode)
         try:
             with open(bashrc_file) as f:
                 bashrc_content = f.read()
@@ -24,12 +29,11 @@ class PostInstall(install):
                 print("[*] Updated .bashrc file.")
         except Exception:
             print("[-] Caught Exception while updating .bashrc file. Please update it manually: 'echo funmotd >> ~/.bashrc'")
-        install.run(self)
 
 
 setuptools.setup(
       name='funmotd',
-      version='0.1',
+      version='0.2',
       description='TV Show and Movie Quotes MOTD for Terminal',
       url='https://github.com/veerendra2/funmotd',
       author='Veerendra Kakumanu',
@@ -38,8 +42,9 @@ setuptools.setup(
       packages=setuptools.find_packages(),
       entry_points={'console_scripts': ['funmotd = funmotd:main']},
       package_dir={'funmotd': 'funmotd/'},
-      package_data={'funmotd': ['config.json'], },
-      python_requires=">=3.3",
+#      package_data={'funmotd': ['config.json'], },
+      include_package_data=True,
+      python_requires=">=3.4",
       cmdclass={'install': PostInstall, },
       classifiers=[
               "Programming Language :: Python :: 3.4",

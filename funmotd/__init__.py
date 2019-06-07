@@ -12,7 +12,7 @@ from .quotes_db import all_quotes
 
 __author__ = "Veerendra Kakumanu (veerendra2)"
 __license__ = "Apache 2.0"
-__version__ = "0.1"
+__version__ = "0.3"
 __maintainer__ = "Veerendra Kakumanu"
 
 
@@ -21,7 +21,7 @@ config_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.
 
 def banner():
     print("+----------------------------------------------+")
-    print("|Funny MOTD (funmotd) v0.1                     |")
+    print("|Funny MOTD (funmotd) v0.3                     |")
     print("|Author: Veerendra Kakumanu (veerendra2)       |")
     print("|Blog: https://veerendra2.github.io            |")
     print("|Repo: https://github.com/veerendra2/funmotd   |")
