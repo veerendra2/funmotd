@@ -3,7 +3,7 @@
 all_quotes = {
     "game_of_thrones": [
         [
-            {"quote": "Nothing fucks you harder than time.", "character": "Davos Seaworth", "character": "Game of Thrones"},
+            {"quote": "Nothing fucks you harder than time.", "character": "Davos Seaworth", "name": "Game of Thrones"},
             {"quote": "What is dead may never die... but kill the bastards anyway.", "character": "Yara", "name": "Game of Thrones"},
             {"quote": "Why are all the gods such vicious cunts? Where's the god of tits and wine?", "character": "Tyrion", "name": "Game of Thrones"},
             {"quote": "It's a shame the throne isn't made out of cocks, they'd have never got him off it.", "character": "Jaime Lannister", "name": "Game of Thrones"},
