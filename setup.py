@@ -33,7 +33,7 @@ class PostInstall(install):
 
 setuptools.setup(
       name='funmotd',
-      version='0.2',
+      version='0.3',
       description='TV Show and Movie Quotes MOTD for Terminal',
       url='https://github.com/veerendra2/funmotd',
       author='Veerendra Kakumanu',
@@ -42,7 +42,7 @@ setuptools.setup(
       packages=setuptools.find_packages(),
       entry_points={'console_scripts': ['funmotd = funmotd:main']},
       package_dir={'funmotd': 'funmotd/'},
-#      package_data={'funmotd': ['config.json'], },
+      package_data={'funmotd': ['config.json'], },
       include_package_data=True,
       python_requires=">=3.4",
       cmdclass={'install': PostInstall, },
