@@ -78,7 +78,7 @@ $ funmotd -l
 |  NSFW                  | True        |
 +------------------------+-------------+
 ```
-#### Modify Weights
+#### Enable/Disable `NSFW` Quotes
 There are some quotes "NSFW", so this option helps to enable/disable.
 ```
 $ funmotd -n no
