@@ -117,7 +117,7 @@ all_quotes = {
             {"quote": "We're done when I say we're done.", "character": "Walter White", "name": "Breaking Bad"},
             {"quote": "So you do have a plan? Yeah, Mr. White! Yeah, science!", "character": "Jesse Pinkman", "name": "Breaking Bad"},
             {"quote": "I'm a criminal, yo.", "character": "Jesse Pinkman", "name": "Breaking Bad"},
-            {"quote": "Did you just bring a bomb into a hostpital?", "character": "Jesse Pinkman", "name": "Breaking Bad"},
+            {"quote": "Did you just bring a bomb into a hospital?", "character": "Jesse Pinkman", "name": "Breaking Bad"},
             {"quote": "Seriously? 'Hello Kitty'?", "character": "Jesse Pinkman", "name": "Breaking Bad"},
             {"quote": "Better call Saul!", "character": "Saul Goodman", "name": "Breaking Bad"},
             {"quote": "You do seem to have a little 'shit creek' action going... You know, FYI, you can buy a paddle.", "character": "Saul Goodman", "name": "Breaking Bad"},
