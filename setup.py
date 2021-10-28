@@ -37,15 +37,14 @@ class PostInstall(install):
 
 setuptools.setup(
       name='funmotd',
-      version='1.0',
+      version='1.1',
       description='TV Show and Movie Quotes MOTD for Terminal',
       long_description=long_description,
       long_description_content_type='text/markdown',
       keywords='motd, funmotd, movies-quotes',
       project_urls={
         'Documentation': 'https://github.com/veerendra2/funmotd/blob/master/README.md',
-        'Bug Reports':
-        'https://github.com/veerendra2/funmotd/issues',
+        'Bug Reports': 'https://github.com/veerendra2/funmotd/issues',
         'Source Code': 'https://github.com/veerendra2/funmotd',
     },
       author='veerendra2',

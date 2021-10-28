@@ -12,7 +12,7 @@ from .quotes_db import all_quotes
 
 __author__ = "veerendra2"
 __license__ = "Apache 2.0"
-__version__ = "1.0"
+__version__ = "1.1"
 __maintainer__ = "veerendra2"
 
 
@@ -85,7 +85,7 @@ def main():
         Configuration")
     arg.add_argument("-e", action="store", dest="modify", default=False, nargs=2, help="Modify Weights")
     arg.add_argument("-n", action="store", dest="nsfw", default=False, help="Enable/Disable NSFW Quotes")
-    arg.add_argument('-v', action='version', version='%(prog)s 1.0')
+    arg.add_argument('-v', action='version', version='%(prog)s 1.1')
     results = arg.parse_args()
     if results.view:
         display_config()

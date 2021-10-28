@@ -32,7 +32,7 @@ optional arguments:
   -l                View Available TV Show/Movies & Configuration
   -e MODIFY MODIFY  Modify Weights
   -n NSFW           Enable/Disable NSFW Quotes
-  -v                Version and author information
+  -v                show program's version number and exit
 ```  
 
 ## How to Configure?
