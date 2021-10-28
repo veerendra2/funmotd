@@ -60,6 +60,5 @@ setuptools.setup(
       classifiers=[
               "Programming Language :: Python :: 3.4",
               "License :: OSI Approved :: Apache Software License",
-              "Development Status :: 4 - Beta"
           ],
       zip_safe=False)

@@ -1,9 +1,10 @@
-![PyPI - License](https://img.shields.io/pypi/l/funmotd)
 ![GitHub](https://img.shields.io/github/license/veerendra2/funmotd.svg)
 ![GitHub stars](https://img.shields.io/github/stars/veerendra2/funmotd.svg)
 ![PyPI - Status](https://img.shields.io/pypi/status/funmotd.svg)
-![PyPI](https://img.shields.io/pypi/v/funmotd.svg)
+![PyPI](https://img.shields.io/pypi/v/funmotd)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/funmotd.svg)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/funmotd)
+[![Release](https://github.com/veerendra2/funmotd/actions/workflows/releases.yml/badge.svg)](https://github.com/veerendra2/funmotd/actions/workflows/releases.yml)
 # Funny motd (funmotd)
 A cool tool to display random quotes from Movies and TV Shows as [`motd`](https://en.wikipedia.org/wiki/Motd_(Unix)) on Terminal when you open.
 

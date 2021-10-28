@@ -74,7 +74,7 @@ def show_motd():
         quote = random.choice(all_quotes[name][0] + all_quotes[name][1])
     else:
         quote = random.choice(all_quotes[name][1])
-    print("*** Quote of the Day ***n")
+    print("*** Quote of the Day ***")
     print(textwrap.fill('"'+quote["quote"]+'"', 90))
     print("   ~{} ({})\n".format(quote["character"], quote["name"]))
 
