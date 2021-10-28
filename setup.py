@@ -10,6 +10,10 @@ if (3, 0) < version < (3, 4):
     sys.exit(1)
 
 
+with open('README.md', 'r', encoding='utf-8') as fh:
+    long_description = fh.read()
+
+
 class PostInstall(install):
     def run(self):
         install.run(self)
@@ -33,11 +37,18 @@ class PostInstall(install):
 
 setuptools.setup(
       name='funmotd',
-      version='0.3',
+      version='1.0',
       description='TV Show and Movie Quotes MOTD for Terminal',
-      url='https://github.com/veerendra2/funmotd',
-      author='Veerendra Kakumanu',
-      author_email='veerendrav2@gmail.com',
+      long_description=long_description,
+      long_description_content_type='text/markdown',
+      keywords='motd, funmotd, movies-quotes',
+      project_urls={
+        'Documentation': 'https://github.com/veerendra2/funmotd/blob/master/README.md',
+        'Bug Reports':
+        'https://github.com/veerendra2/funmotd/issues',
+        'Source Code': 'https://github.com/veerendra2/funmotd',
+    },
+      author='veerendra2',
       license='Apache 2.0',
       packages=setuptools.find_packages(),
       entry_points={'console_scripts': ['funmotd = funmotd:main']},

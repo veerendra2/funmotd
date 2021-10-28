@@ -1,1 +1,4 @@
 include funmotd/config.json
+include funmotd.toml
+include *.md
+include LICENSE

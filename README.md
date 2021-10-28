@@ -1,25 +1,18 @@
-![GitHub](https://img.shields.io/github/license/veerendra2/funmotd.svg?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/veerendra2/funmotd.svg?style=for-the-badge)
-![PyPI - Status](https://img.shields.io/pypi/status/funmotd.svg?style=for-the-badge)
-![PyPI](https://img.shields.io/pypi/v/funmotd.svg?style=for-the-badge)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/funmotd.svg?style=for-the-badge)
+![PyPI - License](https://img.shields.io/pypi/l/funmotd)
+![GitHub](https://img.shields.io/github/license/veerendra2/funmotd.svg)
+![GitHub stars](https://img.shields.io/github/stars/veerendra2/funmotd.svg)
+![PyPI - Status](https://img.shields.io/pypi/status/funmotd.svg)
+![PyPI](https://img.shields.io/pypi/v/funmotd.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/funmotd.svg)
 # Funny motd (funmotd)
 A cool tool to display random quotes from Movies and TV Shows as [`motd`](https://en.wikipedia.org/wiki/Motd_(Unix)) on Terminal when you open.
 
-![Example](https://raw.githubusercontent.com/veerendra2/funmotd/master/example.gif)
+![Example](https://user-images.githubusercontent.com/8393701/139233945-d44c1465-97fd-45ed-89f3-84ce19bcfeff.gif)
 
 ## Installation
-#### Using `pip3`
 ```
 $ pip3 install funmotd
 ```
-#### From source
-```
-$ git clond https://github.com/veerendra2/funmotd.git
-$ cd funmotd
-$ python3 setup.py install
-```
-**NOTE:** This package requires `python3` and `pip3` to install it. Install `pip3`: `sudo apt install python3-pip -y`
 
 ## How it works?
 The [`__init__.py`](https://github.com/veerendra2/funmotd/blob/master/funmotd/__init__.py) first picks a random `TV Shows/Movies` with [`weights`](https://docs.python.org/3/library/random.html#random.choices) and again picks a quote randomly from selected `TV Show/Moves`. You can see available  of quotes in [`quotes_db.py`](https://github.com/veerendra2/funmotd/blob/master/funmotd/quotes_db.py)

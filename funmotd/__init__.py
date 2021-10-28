@@ -10,22 +10,13 @@ import os
 
 from .quotes_db import all_quotes
 
-__author__ = "Veerendra Kakumanu (veerendra2)"
+__author__ = "veerendra2"
 __license__ = "Apache 2.0"
-__version__ = "0.3"
-__maintainer__ = "Veerendra Kakumanu"
+__version__ = "1.0"
+__maintainer__ = "veerendra2"
 
 
 config_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.json')
-
-
-def banner():
-    print("+----------------------------------------------+")
-    print("|Funny MOTD (funmotd) v0.3                     |")
-    print("|Author: Veerendra Kakumanu (veerendra2)       |")
-    print("|Blog: https://veerendra2.github.io            |")
-    print("|Repo: https://github.com/veerendra2/funmotd   |")
-    print("+----------------------------------------------+\n")
 
 
 def read_config():
@@ -83,7 +74,7 @@ def show_motd():
         quote = random.choice(all_quotes[name][0] + all_quotes[name][1])
     else:
         quote = random.choice(all_quotes[name][1])
-    print("### Quote of the Day ###\n")
+    print("*** Quote of the Day ***n")
     print(textwrap.fill('"'+quote["quote"]+'"', 90))
     print("   ~{} ({})\n".format(quote["character"], quote["name"]))
 
@@ -94,12 +85,9 @@ def main():
         Configuration")
     arg.add_argument("-e", action="store", dest="modify", default=False, nargs=2, help="Modify Weights")
     arg.add_argument("-n", action="store", dest="nsfw", default=False, help="Enable/Disable NSFW Quotes")
-    arg.add_argument('-v', action='store_true', dest="version_info",  default=False, help="Version and author \
-        information")
+    arg.add_argument('-v', action='version', version='%(prog)s 1.0')
     results = arg.parse_args()
-    if results.version_info:
-        banner()
-    elif results.view:
+    if results.view:
         display_config()
     elif results.modify:
         if not results.modify[1].isdigit():
