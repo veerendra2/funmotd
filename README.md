@@ -1,4 +1,4 @@
-### ⚠️  This project has been reimplemented in Go as [funmotd](https://github.com/veerendra2/funmotd), renamed `funmotd-py`, and archived.
+### ⚠️  This project has been archived and reimplemented in Go as [quotations](https://github.com/veerendra2/quotations).
 ![GitHub](https://img.shields.io/github/license/veerendra2/funmotd.svg)
 ![GitHub stars](https://img.shields.io/github/stars/veerendra2/funmotd.svg)
 ![PyPI - Status](https://img.shields.io/pypi/status/funmotd.svg)
